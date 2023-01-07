@@ -33,13 +33,7 @@
             websites in 12 months and made 5 full reskins. It's a challenge
             since we don't use anything else but html, css and bootstrap, while
             our clients use the latest WP, Wix and other fancy stuff.
-          </div>
-          <div class="">
-            Link to project:
-            <a href="https://www.mediahawk.co.uk/" target="_blank"
-              >https://www.mediahawk.co.uk/</a
-            >
-          </div>
+          </div>          
         </div>
         <div class="block blockimage">
           <div class="br-img">
@@ -80,13 +74,7 @@
           </div>
 
           <div class="br-content">
-            I worked on all kinds of interactive digital media content for
-            mobile, interactive screens, kiosks in Vue.js, Php, I used git,
-            VsCode, Google Teams tools, Asana, Bitbucket. I work for clients
-            like Lego, Merlin Entertainments, Halfords. Some of my work can be
-            seen in some restaurants' menu screens, the interactive basketball
-            game in Footlocker (shorturl.at/ghoB9), and mobile games in theme
-            parks like Alton Towers and Legoland Florida.
+            I worked on all kinds of interactive digital media content for mobile, interactive screens, kiosks in Vue.js, Php, I used git, VsCode, Google Teams tools, Asana, Bitbucket. I work for clients like Lego, Merlin Entertainments, Halfords. Some of my work can be seen in some restaurants' menu screens, the interactive basketball game in Footlocker, and mobile games in theme parks like Alton Towers and Legoland Florida.
           </div>
         </div>
       </div>
