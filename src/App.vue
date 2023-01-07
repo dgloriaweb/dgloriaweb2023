@@ -6,6 +6,10 @@
     <HeroComponent />
     <ProjectsList />
   </div>
+  <div class="copy">
+    &copy;2023 by
+    <a href="https://github.com/dgloriaweb" target="_blank">dGloria Web</a>
+  </div>
 </template>
 
 <script setup>
@@ -15,4 +19,10 @@ import ProjectsList from '@/components/ProjectsList'
 </script>
 
 <style >
+.copy {
+  text-align: right;
+  font-size: 16px;
+  padding: 10vw;
+  font-style: italic;
+}
 </style>

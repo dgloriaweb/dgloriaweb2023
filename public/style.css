@@ -3,10 +3,10 @@
 
 :root {
     --one: #161c24;
-    --two: #64425c;
-    --three: #7b617c;
+    --two: #465f91;
+    --three: #b88ec3;
     --four: #859fd0;
-    --five: #b4aade;
+    --five: #b5c9f3;
     --six: #cfd7fe;
 }
 
@@ -47,8 +47,8 @@ a:hover {
 
 
 h2.title {
-    font-family: 'Roboto Condensed', sans-serif;
     color: var(--six);
     font-size: 40px;
+    font-weight:400;
     text-transform: uppercase;
 }

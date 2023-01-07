@@ -222,7 +222,10 @@
 }
 .br-top {
   font-size: 45px;
-  font-weight: 100;
+  font-weight: 400;
+  color: var(--three);
+  font-family: "Roboto Condensed", sans-serif;
+  padding-block: 30px;
 }
 .stack img {
   padding: 5px;
