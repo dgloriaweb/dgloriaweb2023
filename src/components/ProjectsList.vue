@@ -49,7 +49,7 @@
         <div class="block blockimage">
           <div class="br-img">
             <!-- image here -->
-            <img src="images/beaver.png" alt="" width="100%" height="auto" />
+            <img src="images/beaver.jpg" alt="" width="100%" height="auto" />
           </div>
         </div>
         <div class="block blocktext">
