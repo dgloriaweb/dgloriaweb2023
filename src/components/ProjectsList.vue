@@ -189,7 +189,7 @@
     </div>
     <div class="experience_list">
       <hr />
-      <h2 class="br-top">Experience</h2>
+       <h2 class="title">...so how can she be useful in my team?</h2>
       <h3>Data Manipulation</h3>
       <p>
         Collect, analyse, simplify, export or import data into SQL database from
@@ -239,6 +239,11 @@
         Work with analytics data, understand marketing tools, conversions, SEO
       </p>
     </div>
+    <hr>
+       <h2 class="title">...is she a super geek then?</h2>
+
+       <p>I am spending my days climbing on walls, hitting drums, tearing guitar strings, splashing into water approaching 2.5k in swimming, and of course spending a huge chunk of the day in the kitchen cooking something nice. <br> I hardly stay up anymore for gaming, but often spend hours on video tutorials. I've got lots of app ideas in my notebooks and Jira that some day I'd like to work on. I love the outdoors and the sunshine, I love to travel or just hike in the UK.</p>
+
   </div>
 </template>
 
