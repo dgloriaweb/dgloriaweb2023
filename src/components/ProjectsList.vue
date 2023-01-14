@@ -33,7 +33,7 @@
             websites in 12 months and made 5 full reskins. It's a challenge
             since we don't use anything else but html, css and bootstrap, while
             our clients use the latest WP, Wix and other fancy stuff.
-          </div>          
+          </div>
         </div>
         <div class="block blockimage">
           <div class="br-img">
@@ -74,7 +74,13 @@
           </div>
 
           <div class="br-content">
-            I worked on all kinds of interactive digital media content for mobile, interactive screens, kiosks in Vue.js, Php, I used git, VsCode, Google Teams tools, Asana, Bitbucket. I work for clients like Lego, Merlin Entertainments, Halfords. Some of my work can be seen in some restaurants' menu screens, the interactive basketball game in Footlocker, and mobile games in theme parks like Alton Towers and Legoland Florida.
+            I worked on all kinds of interactive digital media content for
+            mobile, interactive screens, kiosks in Vue.js, Php, I used git,
+            VsCode, Google Teams tools, Asana, Bitbucket. I work for clients
+            like Lego, Merlin Entertainments, Halfords. Some of my work can be
+            seen in some restaurants' menu screens, the interactive basketball
+            game in Footlocker, and mobile games in theme parks like Alton
+            Towers and Legoland Florida.
           </div>
         </div>
       </div>
@@ -180,6 +186,58 @@
           </div>
         </div>
       </div>
+    </div>
+    <div class="experience_list">
+      <hr />
+      <h2 class="br-top">Experience</h2>
+      <h3>Data Manipulation</h3>
+      <p>
+        Collect, analyse, simplify, export or import data into SQL database from
+        different data files, such as txt, csv, xls or other worksheets. (MySQL,
+        MsSql) Plan and create databases for an exact purpose for complex tasks,
+        define API requests
+      </p>
+      <h3>Application Planning</h3>
+      <p>
+        Plan and create applications in different languages (php, c#) for
+        managing processes to reduce errors, simplify daily workflow with user
+        friendly frontend and a database backend, eg: financial transactions,
+        inventory management, HR systems
+      </p>
+      <h3>Self Management</h3>
+      <p>
+        Manage work using Jira, creating backlog, setup goals, sprints,
+        milestones, create documentation/wiki for application, API or
+        development process Learn new technologies, apply them in personal
+        projects. Update old project code to new technology (Codeingiter to
+        Laravel)
+      </p>
+      <h3>Backend</h3>
+      <p>
+        Create, maintain and schedule API data connections, with automated
+        updating services, Setup LAMP servers on cloud hosting services, virtual
+        hosts, connect via ssh authentication or ftp, manage Linux, auto deploy
+        from github repository, setup local Linux servers. (DigitalOcean,
+        Netlify)
+      </p>
+      <h3>Frontend</h3>
+      <p>
+        Create clear and logical fully responsive frontend using vanilla
+        CSS/HTML/JavaScript/jQuery or use templates, Bootstrap, and frameworks
+        like Vue.js and other SFC. Create simple browser applications for mobile
+        or special content for special screen sizes, interactive screens.
+        Understand grid and flex layout concepts. Working with template systems
+        like smarty, twig, Present API data in frontend
+      </p>
+      <h3>Design</h3>
+      <p>
+        Plan and design responsive websites using Figma and image manipulation
+        using Gimp
+      </p>
+      <h3>Marketing</h3>
+      <p>
+        Work with analytics data, understand marketing tools, conversions, SEO
+      </p>
     </div>
   </div>
 </template>
