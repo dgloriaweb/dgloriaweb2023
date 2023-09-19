@@ -39,7 +39,7 @@
 
     <div class="herocontainer container">
       <div class="">
-        <div class="herotitle">WHO IS Beatrix?</div>
+        <div class="herotitle">WHO IS Beatrix Ducz?</div>
         <div class="intro">
           An expert problem solver. A mid-level, full-stack developer. A wife. A
           great cook. A life long learner. A patient teacher. A fan of Agile. A
