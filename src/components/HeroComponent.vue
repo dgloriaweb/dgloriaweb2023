@@ -13,7 +13,7 @@
       <a href="https://github.com/dgloriaweb" target="_blank">
         <img
           src="images/github.png"
-          alt="Dev.to link"
+          alt="Github link"
           width="30px"
           height="26px"
         />
@@ -21,7 +21,15 @@
       <a href="https://my.indeed.com/p/beatrixd-r2c2nb8" target="_blank">
         <img
           src="images/indeed.png"
-          alt="Dev.to link"
+          alt="Inded link"
+          width="30px"
+          height="26px"
+        />
+      </a>
+      <a href="mailto:dgloria.web@gmail.com" target="_blank">
+        <img
+          src="images/mail.png"
+          alt="email me link"
           width="30px"
           height="26px"
         />
@@ -31,7 +39,7 @@
 
     <div class="herocontainer container">
       <div class="">
-        <div class="herotitle">WHO IS dGLORIA?</div>
+        <div class="herotitle">WHO IS Beatrix?</div>
         <div class="intro">
           An expert problem solver. A mid-level, full-stack developer. A wife. A
           great cook. A life long learner. A patient teacher. A fan of Agile. A
