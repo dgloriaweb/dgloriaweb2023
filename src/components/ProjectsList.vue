@@ -21,7 +21,7 @@
 
           <div class="br-content">
             As a hobby in my free time as a side project I work on
-            <a href="talentexploit.com" target="_blank">talentexploit.com</a>
+            <a href="https://talentexploit.com" target="_blank">talentexploit.com</a>
             that uses a mysql database, sending API data through Laravel8 to a
             Vue3 frontend. I use Netlify to deploy frontend, DigitalOcean to
             store backend, VS Code and Github. This app is
