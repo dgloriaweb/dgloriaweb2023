@@ -17,6 +17,7 @@ body {
     background-color: var(--one);
     color: var(--five);
     margin: 0;
+    line-height: 1.5rem;
 }
 
 #app {
@@ -32,6 +33,11 @@ a:hover {
     color: var(--four);
 }
 
+h2,
+h3 {
+    padding-block: 1.7rem 0.7rem;
+}
+
 .container {
     max-width: 1450px;
     margin: auto;
@@ -39,7 +45,7 @@ a:hover {
 
 @media (max-width: 1690px) {
     .container {
-        padding: 10vh 10vw;
+        padding: 0 10vw;
     }
 }
 

@@ -293,7 +293,7 @@
 
        <p>I do indoor climbing, playing music, swimming, cooking. 
         I often spend hours on video tutorials or tech podcasts. I love the outdoors and the sunshine, 
-        I love to travel or just hike in the UK. I like to take photos, which Google likes (like this one) so I've got a Local Guide badge.</p>
+        I love to travel or just hike in the UK. I like to take photos, which Google likes (like this one) so I've got a Local Guide badge.<br></p>
 
 <div class="">
   <img src="images/photo.jpg" alt="landscape at Furzton lake"  style="max-width:100%"/>
@@ -331,6 +331,7 @@
   color: var(--three);
   font-family: "Roboto Condensed", sans-serif;
   padding-block: 30px;
+  line-height: 3rem;
 }
 .stack img {
   padding: 5px;

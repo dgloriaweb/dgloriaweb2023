@@ -83,6 +83,8 @@
   font-size: 44px;
   font-family: "Waterfall", cursive;
   color: var(--five);
+  margin-top: 2.5rem;
+  line-height:2rem;
 }
 .profile_image_mobile {
   display: none;
