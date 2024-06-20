@@ -19,6 +19,10 @@ body {
     margin: 0;
 }
 
+#app {
+    background-color: #191919;
+}
+
 a {
     color: var(--three);
     font-weight: bold
@@ -49,6 +53,6 @@ a:hover {
 h2.title {
     color: var(--six);
     font-size: 40px;
-    font-weight:400;
+    font-weight: 400;
     text-transform: uppercase;
 }
