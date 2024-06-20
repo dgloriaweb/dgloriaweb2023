@@ -22,7 +22,6 @@ import ProjectsList from '@/components/ProjectsList'
 .copy {
   text-align: right;
   font-size: 16px;
-  padding: 10vw;
   font-style: italic;
 }
 </style>

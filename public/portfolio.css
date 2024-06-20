@@ -1,237 +1,246 @@
-
 /* Reset styles */
 html {
-    box-sizing: border-box;
-    overflow-y: scroll;
+  box-sizing: border-box;
+  overflow-y: scroll;
+}
+
+body {
+  font-family: sans-serif;
+  font-weight: 300;
+  font-size: 100%;
+  margin: 0;
+  padding: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+a:focus,
+button:focus,
+input:focus,
+textarea:focus,
+:focus {
+  outline: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+li,
+p {
+  -webkit-margin-before: 0;
+  -webkit-margin-after: 0;
+  -webkit-margin-start: 0px;
+  -webkit-margin-end: 0px;
+}
+
+/* App container */
+#app {
+  padding: 2em;
+}
+
+/* Accordion styles */
+#geAcc {
+  list-style-type: none;
+  display: block;
+  float: left;
+  margin: 0 auto;
+  padding: 0;
+  overflow: hidden;
+  position: relative;
+  max-width: 1920px;
+  padding: 0;
+  width: 100%;
+}
+
+.geAcc__tile {
+  background-attachment: fixed !important;
+  overflow: hidden;
+  position: relative;
+  transition: all ease 0.5s;
+  width: 100%;
+}
+
+.geAcc__tile img {
+  height: 85px;
+  transition: all ease 0.5s;
+  width: auto;
+}
+
+.geAccT--active img {
+  height: 80vh;
+}
+
+.geAcc__tile__content {
+  height: 100%;
+  left: 0;
+  padding: 2em;
+  position: absolute;
+  top: 0;
+  transition-delay: 0.3s;
+  width: 100%;
+  z-index: 2;
+}
+
+.geAcc__tile__title {
+  color: #000;
+  font-size: 1.7em;
+  font-weight: 700;
+  margin: 0 0 0.25em 0;
+  text-transform: uppercase;
+}
+
+.geAcc__tile__excerpt {
+  color: #000;
+  font-size: 1em;
+  font-weight: 400;
+  line-height: 1.4em;
+  margin: 0 0 2em 0;
+  width: 100%;
+}
+
+.geAcc__tile__button {
+  border: none;
+  color: #fff;
+  display: block;
+  float: left;
+  font-size: 1.4em;
+  font-weight: 700;
+  outline: 0;
+  text-decoration: none;
+  text-transform: uppercase;
+  transform: scale(0.8);
+  transform-origin: 0;
+}
+
+.geAcc__tile__button:after {
+  content: url("https://i.ibb.co/WnYbfZG/arr.png");
+  display: block;
+  float: right;
+  height: 18px;
+  padding: 0 0 0 0.25em;
+  transform: translateX(0);
+  transition: all ease 0.3s;
+  width: 35px;
+}
+
+.geAcc__tile__button:hover:after {
+  transform: translateX(10px);
+}
+
+.geAcc__tile__bar {
+  font-weight: bold;
+  bottom: 0;
+  display: block;
+  left: 0;
+  padding: 2em;
+  position: absolute;
+  width: 100%;
+  z-index: 3;
+}
+
+.geAccT--active .geAcc__tile__bar span {
+  color: #fff;
+  display: block;
+  float: left;
+  font-size: 1.6em;
+  line-height: calc(90px - 4em);
+  text-transform: uppercase;
+}
+
+.geAccT--active .geAcc__tile__bar span:after {
+  content: url("https://i.ibb.co/WnYbfZG/arr.png");
+  display: block;
+  float: right;
+  height: 18px;
+  opacity: 1;
+  padding: 0 0 0 1em;
+  transform: translateX(0);
+  transition: all ease 0.3s;
+  width: 35px;
+}
+
+.geAccT--active .geAcc__tile__bar span:after {
+  opacity: 0;
+}
+
+/* Media queries */
+@media only screen and (min-width: 768px) {
+  .geAccT--active img {
+    height: 50vh;
   }
-  
-  body {
-    background: #fff;
-    font-family: sans-serif;
-    font-weight: 300;
-    font-size: 100%;
-    margin: 0;
-    padding: 0;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    -webkit-text-size-adjust: 100%;
+}
+
+@media only screen and (min-width: 1024px) {
+  .geAcc__tile__content {
+    padding: 4em;
   }
-  
-  a:focus, button:focus, input:focus, textarea:focus, :focus {
-    outline: none;
+
+  .geAcc__tile__excerpt {
+    width: 70%;
   }
-  
-  h1, h2, h3, h4, h5, h6, ul, li, p {
-    -webkit-margin-before: 0;
-    -webkit-margin-after: 0;
-    -webkit-margin-start: 0px;
-    -webkit-margin-end: 0px;
-  }
-  
-  /* App container */
-  #app {
-    padding: 2em;
-  }
-  
-  /* Accordion styles */
-  #geAcc {
-    list-style-type: none;
-    display: block;
-    float: left;
-    margin: 0 auto;
-    padding: 0;
-    overflow: hidden;
-    position: relative;
-    max-width: 1920px;
-    padding: 0;
-    width: 100%;
-  }
-  
-  .geAcc__tile {
-    background-attachment: fixed !important;
-    overflow: hidden;
-    position: relative;
-    transition: all ease 0.5s;
-    width: 100%;
-  }
-  
-  .geAcc__tile img {
-    height: 85px;
-    transition: all ease 0.5s;
-    width: auto;
-  }
-  
+
   .geAccT--active img {
     height: 80vh;
   }
-  
+}
+
+@media only screen and (min-width: 1280px) {
+  #geAcc {
+    display: flex;
+    float: none;
+  }
+
+  .geAcc__tile {
+    background-attachment: inherit !important;
+    width: 16.66667%;
+  }
+
+  .geAccT--active {
+    width: 50%;
+  }
+
+  .geAcc__tile img {
+    min-height: 400px;
+    height: 70vh;
+  }
+
   .geAcc__tile__content {
-    height: 100%;
-    left: 0;
-    padding: 2em;
-    position: absolute;
-    top: 0;
+    opacity: 0;
+    transform: translateX(15vw);
+    transition: all ease 0.5s;
     transition-delay: 0.3s;
-    width: 100%;
-    z-index: 2;
+    width: 1440px;
   }
-  
-  .geAcc__tile__title {
-    color: #000;
-    font-size: 1.7em;
-    font-weight: 700;
-    margin: 0 0 0.25em 0;
-    text-transform: uppercase;
-  }
-  
-  .geAcc__tile__excerpt {
-    color: #000;
-    font-size: 1em;
-    font-weight: 400;
-    line-height: 1.4em;
-    margin: 0 0 2em 0;
-    width: 100%;
-  }
-  
-  .geAcc__tile__button {
-    border: none;
-    color: #fff;
-    display: block;
-    float: left;
-    font-size: 1.4em;
-    font-weight: 700;
-    outline: 0;
-    text-decoration: none;
-    text-transform: uppercase;
-    transform: scale(0.8);
-    transform-origin: 0;
-  }
-  
-  .geAcc__tile__button:after {
-    content: url("https://i.ibb.co/WnYbfZG/arr.png");
-    display: block;
-    float: right;
-    height: 18px;
-    padding: 0 0 0 0.25em;
-    transform: translateX(0);
-    transition: all ease 0.3s;
-    width: 35px;
-  }
-  
-  .geAcc__tile__button:hover:after {
-    transform: translateX(10px);
-  }
-  
-  .geAcc__tile__bar {
-    font-weight: bold;
-    bottom: 0;
-    display: block;
-    left: 0;
-    padding: 2em;
-    position: absolute;
-    width: 100%;
-    z-index: 3;
-  }
-  
-  .geAccT--active .geAcc__tile__bar span {
-    color: #fff;
-    display: block;
-    float: left;
-    font-size: 1.6em;
-    line-height: calc(90px - 4em);
-    text-transform: uppercase;
-  }
-  
-  .geAccT--active .geAcc__tile__bar span:after {
-    content: url("https://i.ibb.co/WnYbfZG/arr.png");
-    display: block;
-    float: right;
-    height: 18px;
+
+  .geAccT--active .geAcc__tile__content {
     opacity: 1;
-    padding: 0 0 0 1em;
     transform: translateX(0);
-    transition: all ease 0.3s;
-    width: 35px;
+    transition: all ease 0.5s;
   }
-  
-  .geAccT--active .geAcc__tile__bar span:after {
+
+  .geAcc__tile__excerpt {
+    width: 33%;
+  }
+
+  .geAcc__tile__button {
+    transform: scale(1);
+  }
+
+  .geAcc__tile__bar {
+    width: 1024px;
+  }
+
+  .geAcc__tile__bar span {
+    font-size: 1.3em;
+    line-height: normal;
+  }
+
+  .geAcc__tile__bar span:after {
     opacity: 0;
   }
-  
-  /* Media queries */
-  @media only screen and (min-width: 768px) {
-    .geAccT--active img {
-      height: 50vh;
-    }
-  }
-  
-  @media only screen and (min-width: 1024px) {
-    .geAcc__tile__content {
-      padding: 4em;
-    }
-    
-    .geAcc__tile__excerpt {
-      width: 70%;
-    }
-    
-    .geAccT--active img {
-      height: 80vh;
-    }
-  }
-  
-  @media only screen and (min-width: 1280px) {
-    #geAcc {
-      display: flex;
-      float: none;
-    }
-    
-    .geAcc__tile {
-      background-attachment: inherit !important;
-      width: 16.66667%;
-    }
-    
-    .geAccT--active {
-      width: 50%;
-    }
-    
-    .geAcc__tile img {
-      min-height: 400px;
-      height: 70vh;
-    }
-    
-    .geAcc__tile__content {
-      opacity: 0;
-      transform: translateX(15vw);
-      transition: all ease 0.5s;
-      transition-delay: 0.3s;
-      width: 1440px;
-    }
-    
-    .geAccT--active .geAcc__tile__content {
-      opacity: 1;
-      transform: translateX(0);
-      transition: all ease 0.5s;
-    }
-    
-    .geAcc__tile__excerpt {
-      width: 33%;
-    }
-    
-    .geAcc__tile__button {
-      transform: scale(1);
-    }
-    
-    .geAcc__tile__bar {
-      width: 1024px;
-    }
-    
-    .geAcc__tile__bar span {
-      font-size: 1.3em;
-      line-height: normal;
-    }
-    
-    .geAcc__tile__bar span:after {
-      opacity: 0;
-    }
-  }
-  
+}
