@@ -6,8 +6,9 @@
         <div class="block blocktext">
           <div class="br-top">Personal projects</div>
           <div class="stack">
-            <img src="images/vue.png" alt="vue" width="30px" height="30px" />
             <img src="images/php.png" alt="php" width="30px" height="30px" />
+            <img src="images/laravel.png" alt="Laravel" width="30px" height="30px" />
+            <img src="images/vue.png" alt="vue" width="30px" height="30px" />
             <img src="images/js.png" alt="js" width="30px" height="30px" />
             <img
               src="images/mysql.png"
