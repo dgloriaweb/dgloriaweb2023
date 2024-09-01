@@ -21,13 +21,6 @@
           </div>
 
           <div class="br-content">
-            As a hobby in my free time as a side project I work on
-            <a href="https://talentexploit.com" target="_blank">talentexploit.com</a>
-            that uses a mysql database, sending API data through Laravel8 to a
-            Vue3 frontend. I use Netlify to deploy frontend, DigitalOcean to
-            store backend, VS Code and Github. This app is
-            going to recommend career paths based on the user settings. 
-            <br>
             Since I am self employed, I work a lot as delivery driver, and found that 
             this community has no supporting app to manage their day to day job.
             So I created <a href="https://dailydriver.info" target="_blank">dailydriver.info</a>, 
