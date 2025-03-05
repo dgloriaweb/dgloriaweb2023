@@ -41,8 +41,7 @@
       <div class="">
         <div class="herotitle">WHO IS Beatrix Ducz?</div>
         <div class="intro">
-          An expert problem solver. A mid-level, full-stack developer. A wife. A
-          great cook. A life long learner. A patient teacher. A fan of Agile. A
+          An expert problem solver. A mid-level, full-stack developer. A life long learner. A fan of Agile Methodologies. A
           valuable member of your team?
         </div>
       </div>
