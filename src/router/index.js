@@ -1,7 +1,6 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import HomeView from '../views/HomeView.vue'
 import PortfolioView from "../views/PortfolioView.vue";
-import LyricsTutorView from "../views/LyricsTutorView.vue";
 
 const routes = [
   {
@@ -14,11 +13,7 @@ const routes = [
     name: 'portfolio',
     component: PortfolioView
   },
-  {
-    path: '/lyrics_tutor',
-    name: 'lyricstutor',
-    component: LyricsTutorView
-  },
+
 ]
 
 const router = createRouter({
