@@ -1,6 +1,7 @@
 [
   {
-    "label": "UMBICORD LTD - Pulse Smart Units",
+    "label": "APIs",
+    "subtitle": "UMBICORD LTD - Pulse Smart Units",
     "url1": "https://pulsehub.uk/",
     "projects": [
       {
@@ -19,7 +20,8 @@
     ]
   },
   {
-    "label": "BEAVER TRISON - Shop Experience Projects - Footlocker",
+    "label": "Interactive Apps",
+    "subtitle": "BEAVER TRISON - Shop Experience Projects - Footlocker",
     "url1": "https://trison.uk/",
     "projects": [
       {
@@ -38,7 +40,8 @@
     ]
   },
   {
-    "label": "BEAVER TRISON - Theme Park Experiences",
+    "label": "Mobile Apps",
+    "subtitle": "BEAVER TRISON - Theme Park Experiences",
     "url1": "https://trison.uk/",
     "projects": [
       {
@@ -68,7 +71,12 @@
     ]
   },
   {
-    "label": "MEDIAHAWK LTD",
-    "url1": "https://www.mediahawk.co.uk/"
+    "label": "Full stack",
+    "subtitle": "MEDIAHAWK LTD",
+    "url1": "https://www.mediahawk.co.uk/",
+    "description": "Company management supporting analytics tool.",
+    "media": [
+
+    ]
   }
 ]

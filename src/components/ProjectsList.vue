@@ -404,7 +404,6 @@ p {
 .br-img img {
   box-sizing: border-box;
   border-radius: 50px;
-  border: 5px solid var(--four);
 }
 hr {
   border: 1px dashed var(--two);

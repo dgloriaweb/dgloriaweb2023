@@ -1,12 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Roboto+Condensed:wght@300;400;700&family=Waterfall&display=swap");
 
 :root {
-  --one: #132327;   /* deep teal-charcoal background */
-  --two: #5fd3c4;   /* larimar turquoise */
-  --three: #f4a261; /* warm sand/apricot */
-  --four: #ff6f59;  /* coral */
-  --five: #f5efe6;  /* warm cream */
-  --six: #2a9d8f;   /* deep jade teal */
+  --one: #37323a;   /* dark charcoal-plum background */
+  --two: #8ed9ff;   /* dusty blue-gray */
+  --three: #ffe865; /* olive gold */
+  --four: #ff886d;  /* terracotta coral */
+  --five: #dfe6e0;  /* light sage-grey */
+  --six: #c3ec77;   /* olive green */
 }
 
 body {
