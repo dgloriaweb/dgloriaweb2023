@@ -95,7 +95,7 @@
               packages and other fancy stuff.
             </p>
           </div>
-          <div class="">
+          <div class="project-link">
             Link to project:
             <a href="https://www.fusemetrix.com/booking-system" target="_blank"
               >www.fusemetrix.com</a
@@ -195,7 +195,7 @@
             mysql querying, building complex reports.
             </p>
           </div>
-          <div class="">
+          <div class="project-link">
             Link to project:
             <a href="https://www.mediahawk.co.uk/" target="_blank"
               >https://www.mediahawk.co.uk/</a
@@ -257,7 +257,7 @@
             system.
             </p>
           </div>
-          <div class="">
+          <div class="project-link">
             Link to project:
             <a href="https://pulsehub.uk/" target="_blank"
               >https://pulsehub.uk/</a
@@ -356,7 +356,8 @@
 <script setup></script>
 
 <style scoped>
-p {
+p,
+.project-link {
   color: var(--five);
 }
 .projectswrapper {
@@ -374,9 +375,17 @@ p {
 .jobblock .blocktext {
   flex: 3;
 }
+@media (max-width: 1028px) {
+  .blockimage {
+    text-align: center;
+  }
+}
 @media (max-width: 768px) {
   .jobblock {
     flex-direction: column;
+  }
+  .jobblock .blockimage {
+    order: -1;
   }
 }
 .block {

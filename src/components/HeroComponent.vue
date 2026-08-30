@@ -65,22 +65,23 @@
   border-radius: 5px;
 }
 .herocontainer {
-  padding-block: 100px;
+  padding-block: 2em;
   column-gap: 10px;
 }
 .herotitle {
   font-family: "Roboto Condensed", sans-serif;
-  font-size: 70px;
+  font-size: clamp(2rem, 8vw, 70px);
+  line-height: 1.15;
   color: var(--six);
   text-align: right;
   text-shadow: -2px -1px 2px #ccc;
 }
 .intro {
-  font-size: 44px;
+  font-size: clamp(1.85rem, 7vw, 44px);
   font-family: "Waterfall", cursive;
   color: var(--five);
   margin-top: 2.5rem;
-  line-height:2rem;
+  line-height: 1.3;
 }
 .profile_image_mobile {
   display: none;
@@ -96,6 +97,7 @@
   }
   .herocontainer {
     display: block;
+    padding-block: 40px;
   }
 }
 </style>

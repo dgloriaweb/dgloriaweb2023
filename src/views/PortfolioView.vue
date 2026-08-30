@@ -11,7 +11,9 @@
         @click="activeTab = index"
       >
         <h1 class="accordion__title">{{ tab.label }}</h1>
-        <h2 class="accordion__subtitle" v-if="tab.subtitle">{{ tab.subtitle }}</h2>
+        <h2 class="accordion__subtitle" v-if="tab.subtitle">
+          {{ tab.subtitle }}
+        </h2>
 
         <div class="accordion__panel">
           <h4 class="accordion__url" v-if="tab.url1">
@@ -37,12 +39,15 @@
             @click.stop
           >
             <article
-              v-for="project in tab.projects"
-              :key="project.title"
+              v-for="(project, projectIndex) in tab.projects"
+              :key="project.title || projectIndex"
               class="portfolio-project"
             >
-              <div class="portfolio-project__text">
-                <h3>{{ project.title }}</h3>
+              <div
+                v-if="project.title || project.description"
+                class="portfolio-project__text"
+              >
+                <h3 v-if="project.title">{{ project.title }}</h3>
                 <p v-if="project.description">
                   {{ project.description }}
                 </p>
@@ -161,10 +166,16 @@ p {
 .accordion__panel {
   display: none;
   padding: 1em;
+  cursor: default;
 }
 
 .accordion__item--active .accordion__panel {
   display: block;
+}
+
+.accordion__item--active .accordion__subtitle {
+  padding: 0.5em 1.5em;
+  font-size: 1.2rem;
 }
 
 .accordion__title,
@@ -174,16 +185,24 @@ p {
   color: var(--tile-text);
 }
 
+.accordion__title,
+.accordion__subtitle {
+  padding-left: 1em;
+  padding-right: 1em;
+}
+
 .accordion__title {
   font-size: 1.35rem;
   font-weight: 700;
-  padding: 1em 1em 0;
+  padding-top: 1em;
+  margin-bottom: 0.5em;
 }
 
 .accordion__subtitle {
   font-size: 1rem;
   font-weight: 400;
-  padding: 0.25em 1em 1em;
+  padding-top: 0.25em;
+  padding-bottom: 1em;
   opacity: 0.75;
 }
 
@@ -214,7 +233,13 @@ p {
     flex: 1;
     overflow-x: hidden;
     overflow-y: auto;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
     transition: flex ease 0.5s;
+  }
+
+  .accordion__item::-webkit-scrollbar {
+    display: none;
   }
 
   .accordion__item--active {
@@ -253,17 +278,18 @@ p {
 .portfolio-media p {
   color: var(--tile-text-soft);
   line-height: 1.5;
+  white-space: pre-line;
 }
 
 .portfolio-project__media {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
   gap: 1rem;
-  align-items: flex-start;
+  align-items: start;
 }
 
 .portfolio-media__video {
-  width: min(720px, 100%);
+  grid-column: 1 / -1;
 }
 
 .portfolio-media__video iframe {
@@ -275,6 +301,6 @@ p {
 
 .portfolio-media__image img {
   display: block;
-  max-width: 100%;
+  width: 100%;
 }
 </style>

@@ -31,6 +31,10 @@ h3 {
   padding-block: 1.7rem 0.7rem;
 }
 
+h3 {
+  color: var(--five);
+}
+
 .container {
   max-width: 1450px;
   margin: auto;
@@ -50,7 +54,8 @@ h3 {
 
 h2.title {
   color: var(--six);
-  font-size: 40px;
+  font-size: clamp(1.75rem, 6vw, 40px);
+  line-height: 1.2;
   font-weight: 400;
   text-transform: uppercase;
 }

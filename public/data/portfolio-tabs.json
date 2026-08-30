@@ -13,7 +13,17 @@
             "provider": "vimeo",
             "url": "https://player.vimeo.com/video/1153913076?muted=1#t=10s",
             "orientation": "landscape",
-            "caption": "Pulsehub – Smarter Streets | Safer Communities"
+            "caption": "The Pulsehub - Smarter Streets | Safer Communities. I've worked in a team of three on the backend of the street hubs in Belfast. My task was to develop connection to a weather API service, retrieve formatted data and make sure it updates as required. Another API related task was to use Visit Belfast's API to allow smart hub users to use their mobile phones to find ongoing events in Belfast by providing a qr code, which opened Google maps with directions to the venue location. The backend also gives editors the ability to edit and approve these contents before it is submitted to the unit. I worked closely supporting the frontend and hardware team to build this device from zero to deploy within six months. I'm very proud of it. Another project I've worked on parallel was a document management software for a large company, which is used by 5 departments so they always have an up to date status of the documents, similar to docusign, but using the same as part of the system."
+          }
+        ]
+      },
+      {
+        "media": [
+          {
+            "type": "image",
+            "src": "/images/20181029_134527.jpg",
+            "orientation": "portrait",
+            "caption": "Me with the device before launch"
           }
         ]
       }
@@ -43,6 +53,7 @@
     "label": "Mobile Apps",
     "subtitle": "BEAVER TRISON - Theme Park Experiences",
     "url1": "https://trison.uk/",
+    "description": "Merlin Entertainments — Theme Park Mobile Experiences\n\nI developed mobile games designed to keep visitors entertained while waiting in attraction queues. QR codes placed around the queue allowed visitors to launch short interactive experiences such as Mia’s Adventure, Pirate Falls, and Discover Secrets of the Ocean.\n\nPlayers could answer questions, complete activities and collect virtual rewards and items as they progressed. The games were created for use across Merlin Entertainments attractions, including LEGOLAND and other theme-park locations.\n\nThe official LEGOLAND site refers to these as “in-queue line games” and lists Pirate Falls: Treasure Quest among the attractions offering them.",
     "projects": [
       {
         "title": "Mia's Adventure",
@@ -75,8 +86,36 @@
     "subtitle": "MEDIAHAWK LTD",
     "url1": "https://www.mediahawk.co.uk/",
     "description": "Company management supporting analytics tool.",
-    "media": [
-
+    "projects": [
+      {
+        "title": "Call tracking",
+        "media": [
+          {
+            "type": "image",
+            "src": "/images/mh1.webp",
+            "orientation": "portrait",
+            "caption": "Call tracking."
+          },
+          {
+            "type": "image",
+            "src": "/images/mh2.webp",
+            "orientation": "portrait",
+            "caption": "Call tracking."
+          },
+          {
+            "type": "image",
+            "src": "/images/mh3.webp",
+            "orientation": "portrait",
+            "caption": "Call tracking."
+          },
+          {
+            "type": "image",
+            "src": "/images/mh4.webp",
+            "orientation": "portrait",
+            "caption": "Call tracking."
+          }
+        ]
+      }
     ]
   }
 ]
