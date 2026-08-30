@@ -54,9 +54,6 @@
 </script>
 
 <style  scoped>
-#hero {
-  background-color: #191919;
-}
 .links {
   padding-top: 20px;
 }

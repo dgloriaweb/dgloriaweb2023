@@ -8,13 +8,15 @@
           <div class="br-top">Introduction</div>
 
           <div class="br-content">
-            I'm a software developer. Today life happens online and there is a
-            huge need for systems to communicate. I am building and maintaining
-            data connections so that these systems stay in sync. That is how you
-            get notified from Fedex or DHL if you order something on Ebay. This
-            is my passion, and I'm thrilled to be able to bring my ideas to life
-            through coding! I am also a drummer, an ADHD person and aphant. Life
-            is never boring around me.
+            <p>
+              I'm a software developer. Today life happens online and there is a
+              huge need for systems to communicate. I am building and
+              maintaining data connections so that these systems stay in sync.
+              That is how you get notified from Fedex or DHL if you order
+              something on Ebay. This is my passion, and I'm thrilled to be able
+              to bring my ideas to life through coding! I am also a drummer, an
+              ADHD person and aphant. Life is never boring around me.
+            </p>
           </div>
         </div>
         <div class="block blockimage">
@@ -55,11 +57,13 @@
           </div>
 
           <div class="br-content">
-            I am working for a logistics company providing
-            multi-channel-marketing and warehousing services for all sorts of
-            vendors. I am building API connections for shipping companies,
-            marketplaces, vendors who are opening currently to
-            multi-channel-marketing.
+            <p>
+              I am working for a logistics company providing
+              multi-channel-marketing and warehousing services for all sorts of
+              vendors. I am building API connections for shipping companies,
+              marketplaces, vendors who are opening currently to
+              multi-channel-marketing.
+            </p>
           </div>
         </div>
       </div>
@@ -83,11 +87,13 @@
           </div>
 
           <div class="br-content">
-            I worked for a CRM system provider. I coded in vanilla Php, Js, Css.
-            I did branding. I've built 14 frontends and made 5 full reskins in a
-            year, using purely HTML/CSS and JS and bootstrap to copy branding
-            from clients' websites that use the latest WP, Wix, packages and
-            other fancy stuff.
+            <p>
+              I worked for a CRM system provider. I coded in vanilla Php, Js,
+              Css. I did branding. I've built 14 frontends and made 5 full
+              reskins in a year, using purely HTML/CSS and JS and bootstrap to
+              copy branding from clients' websites that use the latest WP, Wix,
+              packages and other fancy stuff.
+            </p>
           </div>
           <div class="">
             Link to project:
@@ -140,6 +146,7 @@
           </div>
 
           <div class="br-content">
+            <p>
             I worked on all kinds of interactive digital media content for
             mobile, interactive screens, kiosks in Vue.js, Php, I used git,
             VsCode, Google Teams tools, Asana, Bitbucket. I work for clients
@@ -147,6 +154,7 @@
             seen in some restaurants' menu screens, the interactive basketball
             game in Footlocker, and mobile games in theme parks like Alton
             Towers and Legoland Florida.
+            </p>
           </div>
         </div>
       </div>
@@ -170,6 +178,7 @@
           </div>
 
           <div class="br-content">
+            <p>
             The company has a marketing analytics solution product, similar to
             Google Analytics. I've joined a team of six helpful senior, highly
             qualified developers. My daily tasks were pick up story from JIRA
@@ -184,6 +193,7 @@
             rotation with the team workers. I worked mostly in Codeigniter, but
             had to do bash file fixes, cron-jobs and API as well. I did a lot of
             mysql querying, building complex reports.
+            </p>
           </div>
           <div class="">
             Link to project:
@@ -229,6 +239,7 @@
           </div>
 
           <div class="br-content">
+            <p>
             I've worked in a team of three on the backend of the street hubs in
             Belfast. My task was to develop connection to a weather API service,
             retrieve formatted data and make sure it updates as required.
@@ -244,6 +255,7 @@
             departments so they always have an up to date status of the
             documents, similar to docusign, but using the same as part of the
             system.
+            </p>
           </div>
           <div class="">
             Link to project:
@@ -344,6 +356,9 @@
 <script setup></script>
 
 <style scoped>
+p {
+  color: var(--five);
+}
 .projectswrapper {
   margin: auto;
 }

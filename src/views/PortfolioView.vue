@@ -1,22 +1,96 @@
 <template>
     <div class="container" id="app">
-        <div>
-            <h1>Work History and Projects</h1>
-        </div>
-
-        <ul id="geAcc">
-            <li v-for="(tab, index) in tabs" :key="tab.label" :class="['geAcc__tile', { 'geAccT--active': activeTab == index }]" :style="`background: ${tab.bg} url('${tab.img}') no-repeat 0 0; background-size: cover;`" @click="activeTab = index">
+        <ul id="accordion">
+            <li
+                v-for="(tab, index) in tabs"
+                :key="tab.label"
+                :class="['accordion__item', { 'accordion__item--active': activeTab == index }]"
+                @click="activeTab = index"
+            >
                 <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAJCAQAAACRI2S5AAAAEElEQVR42mNkIAAYRxWAAQAG9gAKqv6+AwAAAABJRU5ErkJggg==">
-                <div class="geAcc__tile__content">
-                    <h4 class="geAcc__tile__title" style="color:#fff;">{{ tab.label }}</h4>
-                    <h4 class="geAcc__tile__url" v-if="tab.url1" style="color:#fff;"><a href="tab.url1" target="_blank">{{ tab.url1 }}</a></h4>
-                    <h4 class="geAcc__tile__url" v-if="tab.url2" style="color:#fff;"><a href="tab.url2" target="_blank">{{ tab.url2 }}</a></h4>
+
+                <div class="accordion__panel">
+                    <h4 class="accordion__url" v-if="tab.url1">
+                        <a :href="tab.url1" target="_blank" rel="noopener" @click.stop>
+                            {{ tab.url1 }}
+                        </a>
+                    </h4>
+
+                    <h4 class="accordion__url" v-if="tab.url2">
+                        <a :href="tab.url2" target="_blank" rel="noopener" @click.stop>
+                            {{ tab.url2 }}
+                        </a>
+                    </h4>
+
                     <br>
-                    <div class="geAcc__tile__excerpt" style="color: #fff;">
-                        <h4 class="geAcc__tile__url" v-if="tab.bio" style="color:#fff;">{{ tab.bio }}</h4>
+
+                    <!-- Rich project content.
+                         Beaver Trison currently has projects in portfolio-tabs.json.
+                         Other companies remain untouched until you add projects. -->
+                    <div
+                        v-if="tab.projects && tab.projects.length"
+                        class="portfolio-projects"
+                        @click.stop
+                    >
+                        <article
+                            v-for="project in tab.projects"
+                            :key="project.title"
+                            class="portfolio-project"
+                        >
+                            <div class="portfolio-project__text">
+                                <h3>{{ project.title }}</h3>
+                                <p v-if="project.description">
+                                    {{ project.description }}
+                                </p>
+                            </div>
+
+                            <div
+                                v-if="project.media && project.media.length"
+                                class="portfolio-project__media"
+                            >
+                                <div
+                                    v-for="(media, mediaIndex) in project.media"
+                                    :key="mediaIndex"
+                                    class="portfolio-media"
+                                >
+                                    <!-- Vimeo -->
+                                    <div
+                                        v-if="media.type === 'video' && media.provider === 'vimeo'"
+                                        class="portfolio-media__video"
+                                    >
+                                        <iframe
+                                            :src="media.url"
+                                            :title="media.caption || project.title"
+                                            allow="autoplay; fullscreen; picture-in-picture"
+                                            allowfullscreen
+                                        ></iframe>
+                                        <p v-if="media.caption">
+                                            {{ media.caption }}
+                                        </p>
+                                    </div>
+
+                                    <!-- Image -->
+                                    <div
+                                        v-else-if="media.type === 'image'"
+                                        class="portfolio-media__image"
+                                    >
+                                        <img
+                                            :src="media.src"
+                                            :alt="media.caption || project.title"
+                                        >
+                                        <p v-if="media.caption">
+                                            {{ media.caption }}
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
                     </div>
                 </div>
-                <div class="geAcc__tile__bar" :style="`background:${tab.bg}`"><span>{{ tab.label }}</span></div>
+
+                <div class="accordion__bar">
+                    <h1 class="accordion__title">{{ tab.label }}</h1>
+                </div>
             </li>
         </ul>
     </div>
@@ -34,37 +108,20 @@ onMounted(async () => {
 </script>
 
 <style scoped>
-/* Reset styles */
-html {
-    box-sizing: border-box;
-    overflow-y: scroll;
-}
-
-body {
-    font-family: sans-serif;
-    font-weight: 300;
-    font-size: 100%;
-    margin: 0;
-    padding: 0;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    -webkit-text-size-adjust: 100%;
+/* Larimar, sand, coral and jade are all light-to-mid tones: dark grey text stays high-contrast on every tile. */
+.accordion__item {
+    --tile-text: #2b2b2b;
+    --tile-text-soft: rgba(43, 43, 43, 0.75);
 }
 
 a:focus,
-button:focus,
-input:focus,
-textarea:focus,
 :focus {
     outline: none;
 }
 
 h1,
-h2,
 h3,
 h4,
-h5,
-h6,
 ul,
 li,
 p {
@@ -75,12 +132,10 @@ p {
 }
 
 /* App container */
-#app {
-    padding: 2em;
-}
+
 
 /* Accordion styles */
-#geAcc {
+#accordion {
     list-style-type: none;
     display: block;
     float: left;
@@ -93,7 +148,7 @@ p {
     width: 100%;
 }
 
-.geAcc__tile {
+.accordion__item {
     background-attachment: fixed !important;
     overflow: hidden;
     position: relative;
@@ -101,20 +156,33 @@ p {
     width: 100%;
 }
 
-.geAcc__tile img {
+.accordion__item:nth-child(4n + 1) {
+    background: var(--two);
+}
+.accordion__item:nth-child(4n + 2) {
+    background: var(--four);
+}
+.accordion__item:nth-child(4n + 3) {
+    background: var(--three);
+}
+.accordion__item:nth-child(4n + 4) {
+    background: var(--six);
+}
+
+
+.accordion__item img {
     height: 85px;
     transition: all ease 0.5s;
     width: auto;
 }
 
-.geAccT--active img {
+.accordion__item--active img {
     height: 80vh;
 }
 
-.geAcc__tile__content {
+.accordion__panel {
     height: 100%;
     left: 0;
-    padding: 2em;
     position: absolute;
     top: 0;
     transition-delay: 0.3s;
@@ -122,130 +190,79 @@ p {
     z-index: 2;
 }
 
-.geAcc__tile__title {
-    color: #000;
-    font-size: 1.7em;
+.accordion__title,
+.accordion__url,
+.accordion__url a {
+    color: var(--tile-text);
+}
+
+.accordion__title {
+    font-size: 1.8em;
     font-weight: 700;
-    margin: 0 0 0.25em 0;
-    text-transform: uppercase;
+    padding: 0 0 0 1.5em;
 }
 
-.geAcc__tile__excerpt {
-    color: #000;
-    font-size: 1em;
-    font-weight: 400;
-    line-height: 1.4em;
-    margin: 0 0 2em 0;
-    width: 100%;
-}
-
-.geAcc__tile__button {
-    border: none;
-    color: #fff;
-    display: block;
-    float: left;
-    font-size: 1.4em;
-    font-weight: 700;
-    outline: 0;
-    text-decoration: none;
-    text-transform: uppercase;
-    transform: scale(0.8);
-    transform-origin: 0;
-}
-
-.geAcc__tile__button:after {
-    content: url("https://i.ibb.co/WnYbfZG/arr.png");
-    display: block;
-    float: right;
-    height: 18px;
-    padding: 0 0 0 0.25em;
-    transform: translateX(0);
-    transition: all ease 0.3s;
-    width: 35px;
-}
-
-.geAcc__tile__button:hover:after {
-    transform: translateX(10px);
-}
-
-.geAcc__tile__bar {
+.accordion__bar {
     font-weight: bold;
-    bottom: 0;
+    top: 0;
     display: block;
     left: 0;
-    padding: 2em;
+    padding: 1em;
     position: absolute;
     width: 100%;
     z-index: 3;
 }
 
-.geAccT--active .geAcc__tile__bar span {
-    color: #fff;
-    display: block;
-    float: left;
-    font-size: 1.6em;
-    line-height: calc(90px - 4em);
-    text-transform: uppercase;
-}
-
-.geAccT--active .geAcc__tile__bar span:after {
+.accordion__item--active .accordion__bar::after {
     content: url("https://i.ibb.co/WnYbfZG/arr.png");
     display: block;
     float: right;
     height: 18px;
-    opacity: 1;
+    opacity: 0;
     padding: 0 0 0 1em;
     transform: translateX(0);
     transition: all ease 0.3s;
     width: 35px;
 }
 
-.geAccT--active .geAcc__tile__bar span:after {
-    opacity: 0;
-}
-
 /* Media queries */
 @media only screen and (min-width: 768px) {
-    .geAccT--active img {
+    .accordion__item--active img {
         height: 50vh;
     }
 }
 
 @media only screen and (min-width: 1024px) {
-    .geAcc__tile__content {
+    .accordion__panel {
         padding: 4em;
     }
 
-    .geAcc__tile__excerpt {
-        width: 70%;
-    }
-
-    .geAccT--active img {
+    .accordion__item--active img {
         height: 80vh;
     }
 }
 
 @media only screen and (min-width: 1280px) {
-    #geAcc {
+    #accordion {
         display: flex;
         float: none;
     }
 
-    .geAcc__tile {
+    .accordion__item {
         background-attachment: inherit !important;
         width: 16.66667%;
     }
 
-    .geAccT--active {
+    .accordion__item--active {
         width: 50%;
     }
 
-    .geAcc__tile img {
+    .accordion__item img {
         min-height: 400px;
         height: 70vh;
     }
 
-    .geAcc__tile__content {
+    .accordion__panel {
         opacity: 0;
         transform: translateX(15vw);
         transition: all ease 0.5s;
@@ -253,31 +270,72 @@ p {
         width: 1440px;
     }
 
-    .geAccT--active .geAcc__tile__content {
+    .accordion__item--active .accordion__panel {
         opacity: 1;
         transform: translateX(0);
         transition: all ease 0.5s;
     }
 
-    .geAcc__tile__excerpt {
-        width: 33%;
-    }
-
-    .geAcc__tile__button {
-        transform: scale(1);
-    }
-
-    .geAcc__tile__bar {
+    .accordion__bar {
         width: 1024px;
     }
 
-    .geAcc__tile__bar span {
-        font-size: 1.3em;
-        line-height: normal;
-    }
-
-    .geAcc__tile__bar span:after {
+    .accordion__bar::after {
         opacity: 0;
     }
+}
+/* Rich project presentation */
+.portfolio-projects {
+    width: 100%;
+    max-height: 55vh;
+    overflow-y: auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem 2rem;
+}
+
+@media (max-width: 768px) {
+    .portfolio-projects {
+        grid-template-columns: 1fr;
+    }
+}
+
+.portfolio-project {
+    border-top: 1px solid var(--tile-text-soft);
+}
+
+.portfolio-project__text h3 {
+    color: var(--tile-text);
+    font-size: 1.35rem;
+}
+
+.portfolio-project__text p,
+.portfolio-media p {
+    color: var(--tile-text-soft);
+    line-height: 1.5;
+}
+
+.portfolio-project__media {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    align-items: flex-start;
+}
+
+.portfolio-media__video {
+    width: min(720px, 100%);
+}
+
+.portfolio-media__video iframe {
+    display: block;
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    border: 0;
+}
+
+.portfolio-media__image img {
+    display: block;
+    max-width: 100%;
+    max-height: 420px;
 }
 </style>
