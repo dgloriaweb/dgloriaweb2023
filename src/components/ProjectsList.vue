@@ -2,14 +2,48 @@
   <div id="projectslist" class="container">
     <h2 class="title">how much experience does she have?</h2>
     <div class="projectswrapper">
+      <!-- Intro -->
       <div class="jobblock">
         <div class="block blocktext">
-          <div class="br-top">Personal projects</div>
+          <div class="br-top">Introduction</div>
+
+          <div class="br-content">
+            I'm a software developer. Today life happens online and there is a
+            huge need for systems to communicate. I am building and maintaining
+            data connections so that these systems stay in sync. That is how you
+            get notified from Fedex or DHL if you order something on Ebay. This
+            is my passion, and I'm thrilled to be able to bring my ideas to life
+            through coding! I am also a drummer, an ADHD person and aphant. Life
+            is never boring around me.
+          </div>
+        </div>
+        <div class="block blockimage">
+          <div class="br-img">
+            <!-- image here -->
+            <img src="images/dgloria.png" alt="" width="100%" height="auto" />
+          </div>
+        </div>
+      </div>
+      <hr />
+      <!-- Rex Brown Ltd -->
+      <div class="jobblock">
+        <div class="block blockimage">
+          <div class="br-img">
+            <!-- image here -->
+            <img src="images/rexbrown.png" alt="" width="100%" height="auto" />
+          </div>
+        </div>
+        <div class="block blocktext">
+          <div class="br-top">Rex Brown Ltd</div>
           <div class="stack">
             <img src="images/php.png" alt="php" width="30px" height="30px" />
-            <img src="images/laravel.png" alt="Laravel" width="30px" height="30px" />
-            <img src="images/vue.png" alt="vue" width="30px" height="30px" />
             <img src="images/js.png" alt="js" width="30px" height="30px" />
+            <img
+              src="images/cursor.png"
+              alt="cursor"
+              width="30px"
+              height="30px"
+            />
             <img
               src="images/mysql.png"
               alt="mysql"
@@ -21,23 +55,11 @@
           </div>
 
           <div class="br-content">
-            Since I am self employed, I work a lot as delivery driver, and found that 
-            this community has no supporting app to manage their day to day job.
-            So I created <a href="https://dailydriver.info" target="_blank">dailydriver.info</a>, 
-            that has many free and some premium functionality for discord members. By default you can register your 
-            daily incomes by celivery partners such as Deliveroo, Uber Eats or other.  
-            There is a feature where you can find the closest loos in case you need to,  
-            and the latest version returns a list of the stores and restaurants that has delivery 
-            marked in their google maps details, with information about whether they are open. 
-            There will be other features, google maps api is fantastic, and I am still 
-            discovering the opportunities it has.
-            I also work on an app that does future budget planning for households. 
-          </div>
-        </div>
-        <div class="block blockimage">
-          <div class="br-img">
-            <!-- image here -->
-            <img src="images/masonry.png" alt="" width="100%" height="auto" />
+            I am working for a logistics company providing
+            multi-channel-marketing and warehousing services for all sorts of
+            vendors. I am building API connections for shipping companies,
+            marketplaces, vendors who are opening currently to
+            multi-channel-marketing.
           </div>
         </div>
       </div>
@@ -61,11 +83,11 @@
           </div>
 
           <div class="br-content">
-            I worked for a CRM system provider. I coded in vanilla Php, 
-            Js, Css. I did branding. I've built 14 frontends and made 5 
-            full reskins in a year, using purely HTML/CSS and JS and bootstrap 
-            to copy branding from clients' websites that use the 
-            latest WP, Wix, packages and other fancy stuff.          
+            I worked for a CRM system provider. I coded in vanilla Php, Js, Css.
+            I did branding. I've built 14 frontends and made 5 full reskins in a
+            year, using purely HTML/CSS and JS and bootstrap to copy branding
+            from clients' websites that use the latest WP, Wix, packages and
+            other fancy stuff.
           </div>
           <div class="">
             Link to project:
@@ -77,7 +99,12 @@
         <div class="block blockimage">
           <div class="br-img">
             <!-- image here -->
-            <img src="images/fusemetrix.png" alt="" width="100%" height="auto" />
+            <img
+              src="images/fusemetrix.png"
+              alt=""
+              width="100%"
+              height="auto"
+            />
           </div>
         </div>
       </div>
@@ -145,8 +172,8 @@
           <div class="br-content">
             The company has a marketing analytics solution product, similar to
             Google Analytics. I've joined a team of six helpful senior, highly
-            qualified developers. My daily tasks were pick up story from JIRA and
-            provide solution. My tasks were mostly to add new functions to
+            qualified developers. My daily tasks were pick up story from JIRA
+            and provide solution. My tasks were mostly to add new functions to
             existing code such as additional filters, new classes, provide data
             for the frontend, develop new integrations, do changes on the
             frontend, in the first quarter we completely rewrote the frontend
@@ -204,24 +231,24 @@
           <div class="br-content">
             I've worked in a team of three on the backend of the street hubs in
             Belfast. My task was to develop connection to a weather API service,
-            retrieve formatted data and make sure it updates as required. Another
-            API related task was to use Visit Belfast's API to allow smart hub 
-            users to use their mobile phones to find ongoing events in Belfast by 
-            providing a qr code, which opened Google maps with
-            directions to the venue location. The backend also gives
-            editors the ability to edit and approve these contents before it is
-            submitted to the unit. I worked closely supporting the frontend and
-            hardware team to build this device from zero to deploy within six
-            months. I'm very proud of it. Another project I've worked on
-            parallel was a document management software for a large company, 
-            which is used by 5 departments so they always have an up 
-            to date status of the documents, similar to docusign, but using the 
-            same as part of the system.
+            retrieve formatted data and make sure it updates as required.
+            Another API related task was to use Visit Belfast's API to allow
+            smart hub users to use their mobile phones to find ongoing events in
+            Belfast by providing a qr code, which opened Google maps with
+            directions to the venue location. The backend also gives editors the
+            ability to edit and approve these contents before it is submitted to
+            the unit. I worked closely supporting the frontend and hardware team
+            to build this device from zero to deploy within six months. I'm very
+            proud of it. Another project I've worked on parallel was a document
+            management software for a large company, which is used by 5
+            departments so they always have an up to date status of the
+            documents, similar to docusign, but using the same as part of the
+            system.
           </div>
           <div class="">
             Link to project:
-            <a href="https://pulsesmarthub.co.uk/" target="_blank"
-              >https://pulsesmarthub.co.uk/</a
+            <a href="https://pulsehub.uk/" target="_blank"
+              >https://pulsehub.uk/</a
             >
           </div>
         </div>
@@ -229,29 +256,30 @@
     </div>
     <div class="experience_list">
       <hr />
-       <h2 class="title">Assets, skills, values</h2>
+      <h2 class="title">Assets, skills, values</h2>
       <h3>Agile development</h3>
       <p>
         Excellent SCRUM member, know how Agile works, know about ceremonies,
-        help the team write, refine and prioritise stories, come up with improvement 
-        ideas, but keep focus on the current sprint. Keep the backlog clean and
-        up to date. Help succeed in the roadmap items. Help the team by 
-        internal training on the latest tech or knowledge gaps;
-        always happy to share knowledge with the team. Working in silo is not
-        my thing. Using staging sites to test new functions.
+        help the team write, refine and prioritise stories, come up with
+        improvement ideas, but keep focus on the current sprint. Keep the
+        backlog clean and up to date. Help succeed in the roadmap items. Help
+        the team by internal training on the latest tech or knowledge gaps;
+        always happy to share knowledge with the team. Working in silo is not my
+        thing. Using staging sites to test new functions.
       </p>
       <h3>Data Manipulation</h3>
       <p>
         Collect, analyse, simplify, export or import data into SQL database from
         different data files, such as txt, csv, xls or other worksheets. (MySQL,
         MsSql) Plan and create databases for an exact purpose for complex tasks,
-        define API requests, write clean and useful documentations for API endpoints.
+        define API requests, write clean and useful documentations for API
+        endpoints.
       </p>
       <h3>Application Planning</h3>
       <p>
-        Plan and create user flows, diagrams, charts, UX in Figma (basic). 
-        Help revisit old code and recommend updates with less code repetition
-        by using components and reusable functions. Create plan for new features
+        Plan and create user flows, diagrams, charts, UX in Figma (basic). Help
+        revisit old code and recommend updates with less code repetition by
+        using components and reusable functions. Create plan for new features
         and present them to the team. Do benchmarking and suggest new features.
       </p>
       <h3>Self Management</h3>
@@ -269,59 +297,71 @@
         hosts, connect via ssh authentication or ftp, manage Linux, auto deploy
         from github repositories, setup local Linux servers. (DigitalOcean,
         Netlify). Write clean code with comments, use Pull Requests to keep
-        repository clean and secure by using SOLID principles. Write tests for new features.
-
+        repository clean and secure by using SOLID principles. Write tests for
+        new features.
       </p>
       <h3>Frontend</h3>
       <p>
         Create a clear and logical fully responsive frontend using vanilla
         CSS/HTML/JavaScript/jQuery or use templates, Bootstrap, and frameworks
-        like Vue.js and other SFC. Create fully responsive, simple browser 
-        applications for mobile devices, or special content for extreme screen 
-        sizes, interactive screens. Understand CSS grid and flex layout concepts. 
-        Working with Php template systems like smarty, twig. 
-        Write frontend applications for any API data.
+        like Vue.js and other SFC. Create fully responsive, simple browser
+        applications for mobile devices, or special content for extreme screen
+        sizes, interactive screens. Understand CSS grid and flex layout
+        concepts. Working with Php template systems like smarty, twig. Write
+        frontend applications for any API data.
       </p>
       <h3>Image manipulation</h3>
       <p>
-        Good skills using Gimp, Photoshop, can do simple converting, editing tasks.
+        Good skills using Gimp, Photoshop, can do simple converting, editing
+        tasks.
       </p>
       <h3>Marketing</h3>
       <p>
         Work with analytics data, understand marketing tools, conversions, SEO,
-        GA4, cookies, GDPR, privacy policies.
-        ...and so much more.
+        GA4, cookies, GDPR, privacy policies. ...and so much more.
       </p>
     </div>
-    <hr>
-       <h2 class="title">OOO hours</h2>
+    <hr />
+    <h2 class="title">OOO hours</h2>
 
-       <p>I do indoor climbing, playing music, swimming, cooking. 
-        I often spend hours on video tutorials or tech podcasts. I love the outdoors and the sunshine, 
-        I love to travel or just hike in the UK. I like to take photos, which Google likes (like this one) so I've got a Local Guide badge.<br></p>
+    <p>
+      I do indoor climbing, playing music, swimming, cooking. I often spend
+      hours on video tutorials or tech podcasts. I love the outdoors and the
+      sunshine, I love to travel or just hike in the UK. I like to take photos,
+      which Google likes (like this one) so I've got a Local Guide badge.<br />
+    </p>
 
-<div class="">
-  <img src="images/photo.jpg" alt="landscape at Furzton lake"  style="max-width:100%"/>
-</div>
+    <div class="">
+      <img
+        src="images/photo.jpg"
+        alt="landscape at Furzton lake"
+        style="max-width: 100%"
+      />
+    </div>
   </div>
 </template>
 
-<script setup>
+<script setup></script>
 
-</script>
-
-<style  scoped>
+<style scoped>
 .projectswrapper {
   margin: auto;
 }
 
 .jobblock {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+}
+.jobblock .blockimage {
+  flex: 1;
+}
+.jobblock .blocktext {
+  flex: 3;
 }
 @media (max-width: 768px) {
   .jobblock {
-    display: block;
+    flex-direction: column;
   }
 }
 .block {
@@ -345,9 +385,9 @@
   width: 350px;
   height: 350px;
   margin: auto;
-  padding-top: 18px;
 }
 .br-img img {
+  box-sizing: border-box;
   border-radius: 50px;
   border: 5px solid var(--four);
 }
