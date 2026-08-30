@@ -2,269 +2,40 @@
   <div id="projectslist" class="container">
     <h2 class="title">how much experience does she have?</h2>
     <div class="projectswrapper">
-      <!-- Intro -->
-      <div class="jobblock">
-        <div class="block blocktext">
-          <div class="br-top">Introduction</div>
+      <template v-for="(job, index) in jobs" :key="job.title">
+        <div
+          class="jobblock"
+          :class="{ 'jobblock--left': index % 2 === 0 }"
+        >
+          <div class="block blocktext">
+            <div class="br-top">{{ job.title }}</div>
+            <div class="stack" v-if="job.stack && job.stack.length">
+              <img
+                v-for="tech in job.stack"
+                :key="tech.src"
+                :src="tech.src"
+                :alt="tech.alt"
+                width="30px"
+                height="30px"
+              />
+            </div>
 
-          <div class="br-content">
-            <p>
-              I'm a software developer. Today life happens online and there is a
-              huge need for systems to communicate. I am building and
-              maintaining data connections so that these systems stay in sync.
-              That is how you get notified from Fedex or DHL if you order
-              something on Ebay. This is my passion, and I'm thrilled to be able
-              to bring my ideas to life through coding! I am also a drummer, an
-              ADHD person and aphant. Life is never boring around me.
-            </p>
+            <div class="br-content">
+              <p>{{ job.description }}</p>
+            </div>
+            <div class="project-link" v-if="job.link">
+              Link to project:
+              <a :href="job.link.url" target="_blank">{{ job.link.label }}</a>
+            </div>
+          </div>
+          <div class="block blockimage">
+            <div class="br-img">
+              <img :src="job.image" alt="" width="100%" height="auto" />
+            </div>
           </div>
         </div>
-        <div class="block blockimage">
-          <div class="br-img">
-            <!-- image here -->
-            <img src="images/dgloria.png" alt="" width="100%" height="auto" />
-          </div>
-        </div>
-      </div>
-      <hr />
-      <!-- Rex Brown Ltd -->
-      <div class="jobblock">
-        <div class="block blockimage">
-          <div class="br-img">
-            <!-- image here -->
-            <img src="images/rexbrown.png" alt="" width="100%" height="auto" />
-          </div>
-        </div>
-        <div class="block blocktext">
-          <div class="br-top">Rex Brown Ltd</div>
-          <div class="stack">
-            <img src="images/php.png" alt="php" width="30px" height="30px" />
-            <img src="images/js.png" alt="js" width="30px" height="30px" />
-            <img
-              src="images/cursor.png"
-              alt="cursor"
-              width="30px"
-              height="30px"
-            />
-            <img
-              src="images/mysql.png"
-              alt="mysql"
-              width="30px"
-              height="30px"
-            />
-            <img src="images/git.png" alt="git" width="30px" height="30px" />
-            <img src="images/css.png" alt="css" width="30px" height="30px" />
-          </div>
-
-          <div class="br-content">
-            <p>
-              I am working for a logistics company providing
-              multi-channel-marketing and warehousing services for all sorts of
-              vendors. I am building API connections for shipping companies,
-              marketplaces, vendors who are opening currently to
-              multi-channel-marketing.
-            </p>
-          </div>
-        </div>
-      </div>
-      <hr />
-      <!-- Mediahawk -->
-      <div class="jobblock">
-        <div class="block blocktext">
-          <div class="br-top">Fusemetrix - Milton Keynes</div>
-          <div class="stack">
-            <img src="images/vue.png" alt="vue" width="30px" height="30px" />
-            <img src="images/php.png" alt="php" width="30px" height="30px" />
-            <img src="images/js.png" alt="js" width="30px" height="30px" />
-            <img
-              src="images/mysql.png"
-              alt="mysql"
-              width="30px"
-              height="30px"
-            />
-            <img src="images/git.png" alt="git" width="30px" height="30px" />
-            <img src="images/css.png" alt="css" width="30px" height="30px" />
-          </div>
-
-          <div class="br-content">
-            <p>
-              I worked for a CRM system provider. I coded in vanilla Php, Js,
-              Css. I did branding. I've built 14 frontends and made 5 full
-              reskins in a year, using purely HTML/CSS and JS and bootstrap to
-              copy branding from clients' websites that use the latest WP, Wix,
-              packages and other fancy stuff.
-            </p>
-          </div>
-          <div class="project-link">
-            Link to project:
-            <a href="https://www.fusemetrix.com/booking-system" target="_blank"
-              >www.fusemetrix.com</a
-            >
-          </div>
-        </div>
-        <div class="block blockimage">
-          <div class="br-img">
-            <!-- image here -->
-            <img
-              src="images/fusemetrix.png"
-              alt=""
-              width="100%"
-              height="auto"
-            />
-          </div>
-        </div>
-      </div>
-      <hr />
-      <!-- Beaver Trison -->
-
-      <div class="jobblock">
-        <div class="block blockimage">
-          <div class="br-img">
-            <!-- image here -->
-            <img src="images/beaver.jpg" alt="" width="100%" height="auto" />
-          </div>
-        </div>
-        <div class="block blocktext">
-          <div class="br-top">Beaver Trison - Ware</div>
-          <div class="stack">
-            <img src="images/vue.png" alt="vue" width="30px" height="30px" />
-            <img src="images/php.png" alt="php" width="30px" height="30px" />
-            <img src="images/js.png" alt="js" width="30px" height="30px" />
-            <img
-              src="images/mysql.png"
-              alt="mysql"
-              width="30px"
-              height="30px"
-            />
-            <img
-              src="images/bitbucket.png"
-              alt="bitbucket"
-              width="30px"
-              height="30px"
-            />
-            <img src="images/css.png" alt="css" width="30px" height="30px" />
-          </div>
-
-          <div class="br-content">
-            <p>
-            I worked on all kinds of interactive digital media content for
-            mobile, interactive screens, kiosks in Vue.js, Php, I used git,
-            VsCode, Google Teams tools, Asana, Bitbucket. I work for clients
-            like Lego, Merlin Entertainments, Halfords. Some of my work can be
-            seen in some restaurants' menu screens, the interactive basketball
-            game in Footlocker, and mobile games in theme parks like Alton
-            Towers and Legoland Florida.
-            </p>
-          </div>
-        </div>
-      </div>
-      <hr />
-      <!-- Mediahawk -->
-      <div class="jobblock">
-        <div class="block blocktext">
-          <div class="br-top">Mediahawk - Milton Keynes</div>
-          <div class="stack">
-            <img src="images/vue.png" alt="vue" width="30px" height="30px" />
-            <img src="images/php.png" alt="php" width="30px" height="30px" />
-            <img src="images/js.png" alt="js" width="30px" height="30px" />
-            <img
-              src="images/mysql.png"
-              alt="mysql"
-              width="30px"
-              height="30px"
-            />
-            <img src="images/git.png" alt="git" width="30px" height="30px" />
-            <img src="images/css.png" alt="css" width="30px" height="30px" />
-          </div>
-
-          <div class="br-content">
-            <p>
-            The company has a marketing analytics solution product, similar to
-            Google Analytics. I've joined a team of six helpful senior, highly
-            qualified developers. My daily tasks were pick up story from JIRA
-            and provide solution. My tasks were mostly to add new functions to
-            existing code such as additional filters, new classes, provide data
-            for the frontend, develop new integrations, do changes on the
-            frontend, in the first quarter we completely rewrote the frontend
-            design of the product. We have worked in two week sprints, by the
-            end of the first quarter I have delivered solutions on my own. I
-            worked mainly with LAMP, Php, javascript, jquery, twig, html and css
-            in windows and linux environment, occasionally I did tech support in
-            rotation with the team workers. I worked mostly in Codeigniter, but
-            had to do bash file fixes, cron-jobs and API as well. I did a lot of
-            mysql querying, building complex reports.
-            </p>
-          </div>
-          <div class="project-link">
-            Link to project:
-            <a href="https://www.mediahawk.co.uk/" target="_blank"
-              >https://www.mediahawk.co.uk/</a
-            >
-          </div>
-        </div>
-        <div class="block blockimage">
-          <div class="br-img">
-            <!-- image here -->
-            <img src="images/mediahawk.png" alt="" width="100%" height="auto" />
-          </div>
-        </div>
-      </div>
-      <hr />
-      <!-- Umbicord -->
-      <div class="jobblock">
-        <div class="block blockimage">
-          <div class="br-img">
-            <!-- image here -->
-            <img src="images/umbi.jpg" alt="" width="100%" height="auto" />
-          </div>
-        </div>
-        <div class="block blocktext">
-          <div class="br-top">Umbicord - Bedfordshire</div>
-          <div class="stack">
-            <img src="images/php.png" alt="php" width="30px" height="30px" />
-            <img
-              src="images/mysql.png"
-              alt="mysql"
-              width="30px"
-              height="30px"
-            />
-            <img
-              src="images/git.png"
-              alt="bitbucket"
-              width="30px"
-              height="30px"
-            />
-            <img src="images/css.png" alt="css" width="30px" height="30px" />
-            <img src="images/html.png" alt="html" width="30px" height="30px" />
-          </div>
-
-          <div class="br-content">
-            <p>
-            I've worked in a team of three on the backend of the street hubs in
-            Belfast. My task was to develop connection to a weather API service,
-            retrieve formatted data and make sure it updates as required.
-            Another API related task was to use Visit Belfast's API to allow
-            smart hub users to use their mobile phones to find ongoing events in
-            Belfast by providing a qr code, which opened Google maps with
-            directions to the venue location. The backend also gives editors the
-            ability to edit and approve these contents before it is submitted to
-            the unit. I worked closely supporting the frontend and hardware team
-            to build this device from zero to deploy within six months. I'm very
-            proud of it. Another project I've worked on parallel was a document
-            management software for a large company, which is used by 5
-            departments so they always have an up to date status of the
-            documents, similar to docusign, but using the same as part of the
-            system.
-            </p>
-          </div>
-          <div class="project-link">
-            Link to project:
-            <a href="https://pulsehub.uk/" target="_blank"
-              >https://pulsehub.uk/</a
-            >
-          </div>
-        </div>
-      </div>
+        <hr />
+      </template>
     </div>
     <div class="experience_list">
       <hr />
@@ -353,7 +124,16 @@
   </div>
 </template>
 
-<script setup></script>
+<script setup>
+import { ref, onMounted } from "vue";
+import { loadProjects } from "@/services/projects.js";
+
+const jobs = ref([]);
+
+onMounted(async () => {
+  jobs.value = await loadProjects();
+});
+</script>
 
 <style scoped>
 p,
@@ -374,6 +154,9 @@ p,
 }
 .jobblock .blocktext {
   flex: 3;
+}
+.jobblock--left .blockimage {
+  order: -1;
 }
 @media (max-width: 1028px) {
   .blockimage {

@@ -1,5 +1,7 @@
 <template>
   <div class="container" id="app">
+    <LinkList />
+    <hr />
     <ul id="accordion">
       <li
         v-for="(tab, index) in tabs"
@@ -103,6 +105,7 @@
 <script setup>
 import { ref, onMounted } from "vue";
 import { loadPortfolioTabs } from "@/services/portfolioTabs.js";
+import LinkList from "@/components/LinkList.vue";
 
 const tabs = ref([]);
 const activeTab = ref(0);
@@ -113,6 +116,7 @@ onMounted(async () => {
 </script>
 
 <style scoped>
+
 /* Larimar, sand, coral and jade are all light-to-mid tones: dark grey text stays high-contrast on every tile. */
 .accordion__item {
   --tile-text: #2b2b2b;

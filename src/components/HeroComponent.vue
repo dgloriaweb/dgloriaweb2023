@@ -1,48 +1,15 @@
 <template>
   <div id="hero">
-    <!-- links: dev.to, github, twitter -->
-    <div class="links">
-      <a href="https://dev.to/dgloriaweb" target="_blank">
-        <img
-          src="images/devto.png"
-          alt="Dev.to link"
-          width="30px"
-          height="26px"
-        />
-      </a>
-      <a href="https://github.com/dgloriaweb" target="_blank">
-        <img
-          src="images/github.png"
-          alt="Github link"
-          width="30px"
-          height="26px"
-        />
-      </a>
-      <a href="https://my.indeed.com/p/beatrixd-r2c2nb8" target="_blank">
-        <img
-          src="images/indeed.png"
-          alt="Inded link"
-          width="30px"
-          height="26px"
-        />
-      </a>
-      <a href="mailto:dgloria.web@gmail.com" target="_blank">
-        <img
-          src="images/mail.png"
-          alt="email me link"
-          width="30px"
-          height="26px"
-        />
-      </a>
-    </div>
+    <LinkList />
     <hr />
 
     <div class="herocontainer container">
       <div class="">
         <div class="herotitle">WHO IS Beatrix Ducz?</div>
         <div class="intro">
-          An expert problem solver. A mid-level, full-stack developer. A life long learner. A fan of Agile Methodologies. A
-          valuable member of your team?
+          An expert problem solver. A mid-level, full-stack developer. A life
+          long learner. A fan of Agile Methodologies. A valuable member of your
+          team?
         </div>
       </div>
     </div>
@@ -50,20 +17,10 @@
 </template>
 
 <script setup>
-
+import LinkList from "@/components/LinkList.vue";
 </script>
 
-<style  scoped>
-.links {
-  padding-top: 20px;
-}
-.links a {
-  padding: 15px;
-}
-.links a img {
-  border: 2px solid #bbb;
-  border-radius: 5px;
-}
+<style scoped>
 .herocontainer {
   padding-block: 2em;
   column-gap: 10px;

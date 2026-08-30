@@ -6,14 +6,14 @@
     "projects": [
       {
         "title": "Pulse Smart Units",
-        "description": "Smart street furniture and digital infrastructure project.",
+        "description": "The Pulsehub - Smarter Streets | Safer Communities. I've worked in a team of three on the backend of the street hubs in Belfast. My task was to develop connection to a weather API service, retrieve formatted data and make sure it updates as required. Another API related task was to use Visit Belfast's API to allow smart hub users to use their mobile phones to find ongoing events in Belfast by providing a qr code, which opened Google maps with directions to the venue location. The backend also gives editors the ability to edit and approve these contents before it is submitted to the unit. I worked closely supporting the frontend and hardware team to build this device from zero to deploy within six months. I'm very proud of it. Another project I've worked on parallel was a document management software for a large company, which is used by 5 departments so they always have an up to date status of the documents, similar to docusign, but using the same as part of the system.",
         "media": [
           {
             "type": "video",
             "provider": "vimeo",
             "url": "https://player.vimeo.com/video/1153913076?muted=1#t=10s",
-            "orientation": "landscape",
-            "caption": "The Pulsehub - Smarter Streets | Safer Communities. I've worked in a team of three on the backend of the street hubs in Belfast. My task was to develop connection to a weather API service, retrieve formatted data and make sure it updates as required. Another API related task was to use Visit Belfast's API to allow smart hub users to use their mobile phones to find ongoing events in Belfast by providing a qr code, which opened Google maps with directions to the venue location. The backend also gives editors the ability to edit and approve these contents before it is submitted to the unit. I worked closely supporting the frontend and hardware team to build this device from zero to deploy within six months. I'm very proud of it. Another project I've worked on parallel was a document management software for a large company, which is used by 5 departments so they always have an up to date status of the documents, similar to docusign, but using the same as part of the system."
+            "orientation": "landscape"
+           
           }
         ]
       },
@@ -94,25 +94,25 @@
             "type": "image",
             "src": "/images/mh1.webp",
             "orientation": "portrait",
-            "caption": "Call tracking."
+            "caption": "Call tracking"
           },
           {
             "type": "image",
             "src": "/images/mh2.webp",
             "orientation": "portrait",
-            "caption": "Call tracking."
+            "caption": "Reporting"
           },
           {
             "type": "image",
             "src": "/images/mh3.webp",
             "orientation": "portrait",
-            "caption": "Call tracking."
+            "caption": "Integrations"
           },
           {
             "type": "image",
             "src": "/images/mh4.webp",
             "orientation": "portrait",
-            "caption": "Call tracking."
+            "caption": "Data Analysis"
           }
         ]
       }

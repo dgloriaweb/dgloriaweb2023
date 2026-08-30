@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none" aria-labelledby="title desc" role="img">
+  <title id="title">Portfolio icon</title>
+  <desc id="desc">Minimal stacked-project portfolio icon with a subtle creative detail.</desc>
+
+  <!-- Main portfolio/project frame -->
+  <rect x="9" y="12" width="46" height="40" rx="6"
+        stroke="#ffffff" stroke-width="3" />
+
+  <!-- Top header line -->
+  <path d="M9 23h46" stroke="#ffffff" stroke-width="3" stroke-linecap="round"/>
+
+  <!-- Project cards -->
+  <rect x="16" y="30" width="14" height="14" rx="2"
+        fill="#ffffff" opacity=".18"/>
+  <rect x="34" y="30" width="14" height="14" rx="2"
+        fill="#ffffff" opacity=".18"/>
+
+  <!-- Creative accent / cursor-like detail -->
+  <path d="M22 36.5l3 3 6-7"
+        stroke="#ffffff" stroke-width="2.7"
+        stroke-linecap="round" stroke-linejoin="round"/>
+
+  <path d="M40 35h6M40 39h4"
+        stroke="#ffffff" stroke-width="2.3"
+        stroke-linecap="round"/>
+</svg>

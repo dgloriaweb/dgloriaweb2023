@@ -23,5 +23,6 @@ import ProjectsList from '@/components/ProjectsList'
   text-align: right;
   font-size: 16px;
   font-style: italic;
+  color: var(--five);
 }
 </style>
